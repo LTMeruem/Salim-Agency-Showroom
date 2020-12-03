@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   height: 80px;
   background: ${COLORS.BLACK};
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 5%;
   margin-bottom: 1.45rem;
@@ -18,7 +18,6 @@ export const HeaderWrapper = styled.header`
 
   a {
     display: flex;
-    width: 200px;
     height: 80%;
     font-size: 1.5rem;
     text-align: center;

@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => {
     query{
       logo: file(relativePath: {eq: "logo_large.png"}){
         childImageSharp {
-          fixed(quality: 100, width: 200){
+          fixed(quality: 100, width: 300){
             ...GatsbyImageSharpFixed_withWebp
           }
         }
