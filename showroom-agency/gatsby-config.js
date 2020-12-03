@@ -12,7 +12,24 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+      
     },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+      typeName: "WPGraphql",
+      fieldName: "wpcontent",
+      url: "http://showroomagency.local/graphql",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+      fonts: [`Roboto`, `Oswald`],
+      display: "swap",
+      },
+    },
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
