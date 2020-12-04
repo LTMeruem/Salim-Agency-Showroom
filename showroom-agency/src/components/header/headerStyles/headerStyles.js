@@ -16,9 +16,10 @@ export const HeaderWrapper = styled.header`
   margin-bottom: 1.45rem;
   z-index: 999;
 
-  a {
+  li a {
     display: flex;
     height: 80%;
+    width: 200px;
     font-size: 1.5rem;
     text-align: center;
     justify-content: center;

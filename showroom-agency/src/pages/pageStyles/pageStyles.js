@@ -126,15 +126,15 @@ export const Wrapper = styled.div`
     }
   }
 
-  .artists {
+  .computers {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 2rem 5%;
-    background-color: ${({ artistsColor = COLORS.PRIMARY }) =>
-      `${artistsColor}`};
+    background-color: ${({ computersColor = COLORS.BLACK }) =>
+      `${computersColor}`};
 
     h2 {
       font-family: ${FONT_FAMILIES.TITLE};
@@ -149,7 +149,7 @@ export const Wrapper = styled.div`
       }
     }
 
-    .artist-items {
+    .computer-items {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -160,7 +160,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const Artist = styled(Link)`
+export const Computer = styled(Link)`
   display: flex;
   position: relative;
   width: 22vw;
@@ -178,8 +178,9 @@ export const Artist = styled(Link)`
   &:hover {
     transform: scale(1.05);
 
-    .artist-info {
+    .computer-info {
       height: 100%;
+      border-radius: 10px;
       background-color: ${COLORS.TERTIARY + "c0"};
 
       p {
@@ -188,7 +189,7 @@ export const Artist = styled(Link)`
     }
   }
 
-  .artist-info {
+  .computer-info {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -221,14 +222,14 @@ export const BottomEdgeDown = styled.div`
   position: absolute;
   bottom: 0;
   width: 0;
-  border-bottom: 130px solid ${COLORS.TERTIARY};
-  border-right: 100vw solid transparent;
+  border-bottom: 130px solid ${COLORS.SECONDARY};
+  border-right: 96.6vw solid transparent;
 
   &:before {
     content: "";
     display: block;
     border-bottom: ${({ color }) => `100px solid ${color}`};
-    border-right: 100vw solid transparent;
+    border-right: 96.6vw solid transparent;
     transform: translateY(130px) scale(1.05);
   }
 `
@@ -253,4 +254,5 @@ export const BottomEdgeUp = styled.div`
 export const Image = styled(Img)`
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 `
