@@ -8,9 +8,9 @@ export const COLORS = {
 }
 
 export const FONT_FAMILIES = {
-  TITLE: "Oswald",
+  TITLE: "Roboto",
   TEXT: "Roboto",
-  BUTTON: "Oswald",
+  BUTTON: "Roboto",
 }
 
 export const MEDIA_QUERIES = {

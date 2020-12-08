@@ -3,7 +3,7 @@ import {useStaticQuery, graphql} from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
-import {Wrapper, Image, BottomEdgeDown, Computer, BottomEdgeUp } from './pageStyles/pageStyles'
+import {Wrapper, Image, BottomEdgeDown, Computer, BottomEdgeUp } from '../pageStyles/pageStyles'
 import { COLORS } from '../constants'
 
 const Computers = () => {
@@ -18,7 +18,7 @@ const Computers = () => {
                 sourceUrl
                 imageFile {
                   childImageSharp {
-                    fluid(quality: 100){
+                    fluid(quality: 75){
                         ...GatsbyImageSharpFluid_withWebp
                     }
                   }
@@ -37,7 +37,7 @@ const Computers = () => {
                       sourceUrl
                       imageFile {
                         childImageSharp {
-                          fluid(quality: 100){
+                          fluid(quality: 50){
                             ...GatsbyImageSharpFluid_withWebp
                           }
                         }
@@ -50,7 +50,6 @@ const Computers = () => {
         }
       }
     `)
-    console.log(computers, bannerFoto, kleineBeschrijving)
     return (
         <Layout>
             <SEO title='Computers'/>
@@ -67,7 +66,6 @@ const Computers = () => {
                 <div className='computers'>
                     <h2>Our Products</h2>
                     <div className="computer-items">
-                        {console.log(computers)}
                         {computers.map(({node: {computerMeta: {behuizingFoto}, slug, title}}) => (
                             <Computer to={`/computers/${slug}`}>
                                 <Image alt={behuizingFoto.altText} fluid={behuizingFoto.imageFile.childImageSharp.fluid} />

@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import {HeaderWrapper, Image} from './headerStyles/headerStyles'
 import Menu from './Menu'
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const {logo,wpcontent: {menuItems}} = useStaticQuery(graphql`
     query{
       logo: file(relativePath: {eq: "logo_large.png"}){
