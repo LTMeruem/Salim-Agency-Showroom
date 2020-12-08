@@ -1,10 +1,9 @@
 import React from 'react'
-import {useStaticQuery, graphql} from 'gatsby'
+import {graphql} from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
 import {Wrapper, Image } from './templateStyles/computerStyles'
-import { COLORS } from '../constants'
 
 const ComputerTemplate = ({data: {wpcontent: {computer: {title, computerMeta: {behuizing, behuizingFoto, extra, geheugen, harddisks, koeling, moederbord, operatingSystem, processor, solidStateDrives, videokaart, voeding, description}, types: {edges: types}}}}}) => {
     return (
@@ -16,7 +15,7 @@ const ComputerTemplate = ({data: {wpcontent: {computer: {title, computerMeta: {b
                         <Image alt={behuizingFoto.altText} fluid={behuizingFoto.imageFile.childImageSharp.fluid} />
                         <div className='types'>
                             {types.map(({node: {name}}) => (
-                                <div className='type'>
+                                <div key={name} className='type'>
                                     {name}
                                 </div>
                             ))}

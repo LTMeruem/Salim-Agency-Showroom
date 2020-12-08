@@ -50,7 +50,6 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(featuredProducts);
   return(
     <Layout>
       <SEO title="Home" />
@@ -67,7 +66,7 @@ const IndexPage = () => {
           <h2>Featured Computers</h2>
           <div className="computer-items">
             {featuredProducts.map(({title, slug, computerMeta}) => (
-              <Computer to={`/computers/${slug}`}>
+              <Computer key={title} to={`/computers/${slug}`}>
                 <Image fluid={computerMeta.behuizingFoto.imageFile.childImageSharp.fluid} alt={computerMeta.behuizingFoto.altText} />
                 <div className="computer-info">
                   <p>{title}</p>
