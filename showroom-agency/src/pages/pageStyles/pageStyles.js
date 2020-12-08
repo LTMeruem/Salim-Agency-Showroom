@@ -222,7 +222,7 @@ export const BottomEdgeDown = styled.div`
   position: absolute;
   bottom: 0;
   width: 0;
-  border-bottom: 130px solid ${COLORS.SECONDARY};
+  border-bottom: 130px solid ${COLORS.WHITE};
   border-right: 96.6vw solid transparent;
 
   &:before {
@@ -238,14 +238,14 @@ export const BottomEdgeUp = styled.div`
   position: absolute;
   bottom: 0;
   width: 0;
-  border-bottom: 140px solid ${COLORS.TERTIARY};
-  border-right: 100vw solid transparent;
+  border-bottom: 140px solid ${COLORS.WHITE};
+  border-right: 96.6vw solid transparent;
 
   &:after {
     content: "";
     display: block;
     border-bottom: ${({ color }) => `100px solid ${color}`};
-    border-left: 100vw solid transparent;
+    border-left: 96.6vw solid transparent;
 
     transform: translateY(140px) scale(1.05);
   }

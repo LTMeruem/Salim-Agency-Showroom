@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
@@ -61,7 +61,7 @@ const IndexPage = () => {
             <p className="header-title">{title}</p>
             <p className="header-description">{kleineBeschrijving}</p>
           </div>
-          <BottomEdgeDown color={COLORS.WHITE}/>
+          <BottomEdgeDown color={COLORS.BLACK}/>
         </div>
         <div className="computers">
           <h2>Featured Computers</h2>
