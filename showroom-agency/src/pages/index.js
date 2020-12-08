@@ -67,7 +67,7 @@ const IndexPage = () => {
           <h2>Featured Computers</h2>
           <div className="computer-items">
             {featuredProducts.map(({title, slug, computerMeta}) => (
-              <Computer to={`/${slug}`}>
+              <Computer to={`/computers/${slug}`}>
                 <Image fluid={computerMeta.behuizingFoto.imageFile.childImageSharp.fluid} alt={computerMeta.behuizingFoto.altText} />
                 <div className="computer-info">
                   <p>{title}</p>
