@@ -3,14 +3,16 @@ import Img from "gatsby-image"
 import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
 
 export const Wrapper = styled.div`
-  background-color: ${COLORS.BLACK};
+  background-color: #ffcfdf;
+  background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
   margin-top: 100px;
 
   .computer-container {
     display: flex;
     margin: 3rem auto;
     width: 90%;
-    background-color: ${COLORS.GREY};
+    background-color: ${COLORS.BLACK};
+    
 
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
@@ -35,11 +37,11 @@ export const Wrapper = styled.div`
         flex-direction: column;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        color: ${COLORS.SECONDARY};
+        color: ${COLORS.WHITE};
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
         background-color: ${COLORS.GREY};
-        border-right: solid 15px ${COLORS.SECONDARY};
+        border-right: solid 15px ${COLORS.GRADIENT};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           color: ${COLORS.PRIMARY};
@@ -100,7 +102,7 @@ export const Wrapper = styled.div`
 
       .description {
         font-size: 1.2rem;
-        color: ${COLORS.TERTIARY};
+        color: ${COLORS.GRADIENT};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1rem;

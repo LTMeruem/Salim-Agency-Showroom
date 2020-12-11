@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
       transform: translate(-50%, -50%);
       width: 60%;
       padding: 1rem;
-      background-color: ${COLORS.PRIMARY + "d0"};
+      background-color: ${COLORS.BLACK + "d0"};
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         top: 120px;
@@ -83,7 +83,7 @@ export const Wrapper = styled.div`
     p {
       width: 70%;
       font-size: 1.3rem;
-      color: ${COLORS.TERTIARY};
+      color: ${COLORS.WHITE};
       text-align: center;
       line-height: 2rem;
       margin: auto;
@@ -102,13 +102,15 @@ export const Wrapper = styled.div`
     align-items: center;
     width: 100%;
     padding: 2rem 5%;
-    background-color: ${({ computersColor = COLORS.BLACK }) =>
-      `${computersColor}`};
+    background-color: #ffcfdf;
+    background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+
+
 
     h2 {
       font-family: ${FONT_FAMILIES.TITLE};
       font-size: 3rem;
-      color: white;
+      color: #414141;
       text-transform: uppercase;
       margin-bottom: 3rem;
 
@@ -137,6 +139,7 @@ export const Computer = styled(Link)`
   margin: 2vw;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  
 
   @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
     width: 90vw;
@@ -150,10 +153,9 @@ export const Computer = styled(Link)`
     .computer-info {
       height: 100%;
       border-radius: 10px;
-      background-color: ${COLORS.TERTIARY + "c0"};
 
       p {
-        color: ${COLORS.BLACK};
+        color: #89D4CF;
       }
     }
   }
@@ -175,14 +177,8 @@ export const Computer = styled(Link)`
       text-transform: uppercase;
       font-size: 1.3rem;
       font-weight: 600;
-      color: white;
+      color: #D7E1EC;
       margin: 0;
-    }
-
-    p:nth-child(2) {
-      color: ${COLORS.SECONDARY};
-
-      margin-top: 0.3rem;
     }
   }
 `
@@ -191,8 +187,9 @@ export const BottomEdgeDown = styled.div`
   position: absolute;
   bottom: 0;
   width: 0;
-  border-bottom: 130px solid ${COLORS.WHITE};
+  border-bottom: 130px solid ${COLORS.GRADIENT};  
   border-right: 96.6vw solid transparent;
+  
 
   &:before {
     content: "";
@@ -207,13 +204,12 @@ export const BottomEdgeUp = styled.div`
   position: absolute;
   bottom: 0;
   width: 0;
-  border-bottom: 140px solid ${COLORS.WHITE};
-  border-right: 96.6vw solid transparent;
+  border-bottom: 120px solid ${COLORS.GRADIENT};
+  border-right: 60vw solid transparent;
 
   &:after {
     content: "";
     display: block;
-    border-bottom: ${({ color }) => `100px solid ${color}`};
     border-left: 96.6vw solid transparent;
 
     transform: translateY(140px) scale(1.05);

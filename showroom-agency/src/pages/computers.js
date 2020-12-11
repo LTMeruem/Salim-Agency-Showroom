@@ -53,15 +53,15 @@ const Computers = () => {
     return (
         <Layout>
             <SEO title='Computers'/>
-            <Wrapper computersColor={COLORS.BLACK} descriptionColor={COLORS.SECONDARY}>
+            <Wrapper computersColor={COLORS.BLACK} descriptionColor={COLORS.BLACK}>
                 <div className='banner'>
                     <Image alt={bannerFoto.altText} fluid={bannerFoto.imageFile.childImageSharp.fluid}/>
-                    <BottomEdgeDown color={COLORS.BLACK}/>
+                    <BottomEdgeDown color={COLORS.GRADIENT}/>
                 </div>
                 <div className='description'>
                     <h2>Equilibrium, pinnacle of technologie</h2>
                     <p>{kleineBeschrijving}</p>
-                    <BottomEdgeUp color={COLORS.BLACK}/>
+                    <BottomEdgeUp/>
                 </div>
                 <div className='computers'>
                     <h2>Our Products</h2>

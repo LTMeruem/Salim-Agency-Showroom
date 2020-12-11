@@ -60,7 +60,6 @@ const IndexPage = () => {
             <p className="header-title">{title}</p>
             <p className="header-description">{kleineBeschrijving}</p>
           </div>
-          <BottomEdgeDown color={COLORS.BLACK}/>
         </div>
         <div className="computers">
           <h2>Featured Computers</h2>

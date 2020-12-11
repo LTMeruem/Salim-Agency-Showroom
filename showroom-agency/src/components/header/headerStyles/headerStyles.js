@@ -9,7 +9,8 @@ export const HeaderWrapper = styled.header`
   top: 0;
   width: 100%;
   height: 80px;
-  background: ${COLORS.BLACK};
+  background-color: #ffcfdf;
+  background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
   justify-content: space-around;
   align-items: center;
   padding: 0 5%;
@@ -43,7 +44,7 @@ export const MenuList = styled.ul`
     justify-content: center;
     align-items: center;
     a {
-      color: ${COLORS.WHITE};
+      color: #414141;
       font-size: 1.2rem;
       font-family: ${FONT_FAMILIES.BUTTON};
       text-transform: uppercase;
@@ -53,12 +54,12 @@ export const MenuList = styled.ul`
     }
 
     a:hover {
-      color: ${COLORS.TERTIARY};
+      color: #03C8A8;
     }
   }
 
   .nav-active {
-    color: ${COLORS.TERTIARY};
+    color: #89D8D3;
   }
 `
 
@@ -112,7 +113,8 @@ export const OverlayWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: ${COLORS.BLACK};
+  background-color: #ffcfdf;
+  background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
   z-index: 9999;
   transition: 1s ease-in-out opacity;
 `
